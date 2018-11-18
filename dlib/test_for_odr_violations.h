@@ -17,11 +17,11 @@ extern "C"
 // you have simply forgotten to compile dlib/all/source.cpp into your application.
 // =========================>>> WHY YOU ARE GETTING AN ERROR HERE <<<=========================
 #ifdef ENABLE_ASSERTS
-    const extern int USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1;
-    const int DLIB_NO_WARN_UNUSED dlib_check_assert_helper_variable = USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1;
+    // const extern int USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1;
+    // const int DLIB_NO_WARN_UNUSED dlib_check_assert_helper_variable = USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1;
 #else
-    const extern int USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1_;
-    const int DLIB_NO_WARN_UNUSED dlib_check_assert_helper_variable = USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1_;
+    // const extern int USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1_;
+    // const int DLIB_NO_WARN_UNUSED dlib_check_assert_helper_variable = USER_ERROR__inconsistent_build_configuration__see_dlib_faq_1_;
 #endif
 
 
@@ -38,8 +38,8 @@ extern "C"
 // Or even better, don't install dlib at all and instead build your program as shown in
 // examples/CMakeLists.txt
 #if defined(DLIB_NOT_CONFIGURED) && !defined(DLIB__CMAKE_GENERATED_A_CONFIG_H_FILE)
-    const extern int USER_ERROR__inconsistent_build_configuration__see_dlib_faq_2;
-    const int DLIB_NO_WARN_UNUSED dlib_check_not_configured_helper_variable = USER_ERROR__inconsistent_build_configuration__see_dlib_faq_2;
+    // const extern int USER_ERROR__inconsistent_build_configuration__see_dlib_faq_2;
+    // const int DLIB_NO_WARN_UNUSED dlib_check_not_configured_helper_variable = USER_ERROR__inconsistent_build_configuration__see_dlib_faq_2;
 #endif
 
 
